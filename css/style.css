@@ -65,6 +65,12 @@ p{
   text-decoration: none;
 }
 
+.nav img{
+  width: 2em;
+  height: 2em;
+  display:none;
+}
+
 /* (2) Banner Area */
 .banner{
   background-image: url('../images/banner-bg.jpg');
@@ -204,7 +210,7 @@ overflow: auto;
 .merch-items:nth-child(4),
 .merch-items:nth-child(8)
 {
-  margin:0;
+  margin-right:0;
 }
 
 .merch-items img{
@@ -436,3 +442,47 @@ form input[type="submit"]
   text-transform:uppercase;
 }
 
+
+/* Responsive Design */
+@media screen and (max-width: 768px){
+  
+  .nav ul{
+    display:none;
+  }
+
+  .nav img{
+    display:block;
+    margin-left: 95%;
+    margin-top:  0.5em;
+  }
+
+  .ads-items{
+    width:100%;
+  }
+
+  .merch-items img{
+    height:200px;
+  }
+
+
+
+  .ads-items5{
+    margin-bottom: 3%;
+  }
+
+  .footer-widgets
+  {
+    width: 49.5%;
+  }
+
+  .footer-widgets:nth-child(2)
+  {
+    margin-right: 0;
+  }
+
+  .merch-items h3{
+    font-size: .7em;
+  }
+
+
+}
